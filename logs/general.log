@@ -1,0 +1,12 @@
+2022-12-17 15:26:28,300 expenses.views :: INFO :: ################################
+2022-12-17 15:26:28,300 expenses.views :: INFO :: try to transfer money $10
+2022-12-17 15:26:28,301 expenses.views :: INFO :: from <preview>
+2022-12-17 15:26:28,301 expenses.views :: INFO :: to <Mandalorian>
+2022-12-17 15:26:28,359 expenses.views :: INFO :: money transfer: SUCCEED
+2022-12-17 15:26:28,360 expenses.views :: INFO :: ################################
+2022-12-17 15:27:12,834 expenses.views :: INFO :: ################################
+2022-12-17 15:27:12,835 expenses.views :: INFO :: try to transfer money $100000
+2022-12-17 15:27:12,836 expenses.views :: INFO :: from <preview>
+2022-12-17 15:27:12,836 expenses.views :: INFO :: to <Mandalorian>
+2022-12-17 15:27:12,840 expenses.views :: ERROR :: money transfer: FAILED (not enough money)
+2022-12-17 15:27:14,182 expenses.views :: INFO :: ################################

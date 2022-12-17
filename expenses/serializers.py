@@ -21,5 +21,3 @@ class TicketSerializer(serializers.HyperlinkedModelSerializer):
         fields = ['pk', 'account', 'ticket_text', 'pub_date', 'money']
 
     
-    # def get_account(self, ticket) -> int:
-    #     return ticket.account.pk

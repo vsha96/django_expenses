@@ -17,7 +17,8 @@ def create_account_oauth(backend, user, response, *args, **kwargs):
     if backend.name == 'twitch':
         try:
             new_account = BankAccount()
-            new_account.account_text = response['display_name'] + '::' + response['email']
+            # new_account.account_text = response['display_name'] + '::' + response['email']
+            new_account.account_text = response['display_name'] + ' :: from Twitch'
             new_account.creation_date = timezone.now()
             new_account.money = new_account.money # default value
             new_account.clean()

@@ -108,6 +108,12 @@ DATABASES = {
         'HOST': 'localhost',
         'PORT': '5432',
     }
+
+    # You may change database to sqlite3
+    # "default": {
+    #     "ENGINE": "django.db.backends.sqlite3",
+    #     "NAME": BASE_DIR / "db.sqlite3",
+    # } 
 }
 
 # ===================
@@ -115,8 +121,8 @@ DATABASES = {
 # ===================
 
 # sentry
-import sentry_sdk
-from sentry_sdk.integrations.django import DjangoIntegration
+# import sentry_sdk
+# from sentry_sdk.integrations.django import DjangoIntegration
 
 # sentry_sdk.init(
 #     dsn= str(os.getenv('SENTRY_DSN_KEY')),
