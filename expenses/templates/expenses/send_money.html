@@ -1,0 +1,15 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'expenses/style.css' %}">
+
+<h1>{{account.account_text}} -- ${{account.money}}</h1>
+
+<a href="{% url 'expenses:detail' account.id %}">Back to the account</a>
+
+<h1></h1>
+<form action="{% url 'expenses:send_money_done' account.id %}" method="post">
+    {% csrf_token %}
+    {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+    {{ form.as_p}}
+    <input type="submit" value="Send money">
+</form>
+

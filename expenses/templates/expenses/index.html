@@ -1,0 +1,20 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'expenses/style.css' %}">
+
+<h1>Bank accounts 
+    <!-- go to the form to add new ticket -->
+    <a href="{% url 'expenses:add_account' %}">
+        <input type="button" value="add new account">
+    </a>
+</h1>
+
+{% if bank_account_list %}
+    <ul>
+    {% for account in bank_account_list %}
+        <li><a href="{% url 'expenses:detail' account.id %}"> {{ account }} </a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No bank accounts.</p>
+{% endif %}
+

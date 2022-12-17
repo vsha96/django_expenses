@@ -1,0 +1,17 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'expenses/style.css' %}">
+
+<h1>Create bank account</h1>
+
+<a href="{% url 'expenses:index' %}">Back to all accounts</a>
+
+<h1></h1>
+<form action="{% url 'expenses:create_account' %}" method="post">
+    {% csrf_token %}
+    {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+    {{ form.as_p }}
+    <input type="submit" value="Create account">
+</form>
+
+<a href="{% url 'social:begin' 'twitch' %}">Create account with Twitch</a>
+
