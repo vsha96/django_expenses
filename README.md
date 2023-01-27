@@ -1,6 +1,6 @@
 # Bank accounts and expenses
 
-It is a training django project that helps to keep expenses on bank accounts.
+It is a demo django project that helps to keep expenses on bank accounts.
 
 ![preview0](demo/preview0.png)
 
